@@ -7,14 +7,15 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import KabitByKabit from '../../../kabitByKabit';
 import { useParams } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 
 function KabitPageLine() {
     // const { page_no, line_no } = useParams();
-    const params = useParams();
+  //  const params = useParams();
     // const { page_no, line_no } = useParams();
-const page_no =   params.page_no
-const line_no =   params.line_no
+  const router = useRouter();
+  const { page_no, line_no } = router.query;
     const [isNos, setIsNos] = useState(false);
     useEffect(()=>{
         console.log('NO', page_no);
