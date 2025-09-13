@@ -25,7 +25,7 @@ import FontChange from '@/components/FontChange';
 import Image from 'next/image';
 
 function ShabadLine() {
-    const location = useLocation();
+ //   const location = useLocation();
     const navigate = useNavigate();
     const { shabad_id, lineno } = useParams();
     console.log('Shabad ID:', shabad_id);
