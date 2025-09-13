@@ -1,7 +1,7 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation, useParams } from "react-router-dom";
+// import { useNavigate, useOutletContext } from "react-router";
+// import { Link, useLocation, useParams } from "react-router-dom";
 //import imgs from './assets/img/content/ggs_01.jpg'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -29,13 +29,14 @@ import { MultiSelect } from "react-multi-select-component";
 import {Helmet} from "react-helmet";
 import HelmetWrapper from '@/components/CommonHelmet';
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
 
 const GGSVerse = (props) => {
    // const location = useLocation();
     const { page_no } = useParams();
-    console.log('ID:', page_no);
+/*     console.log('ID:', page_no);
     const data = location.state;
-    const navigate = useNavigate();
+    const navigate = useNavigate(); */
     const shareUrl = 'https://searchgurbani.com';
     //const title = 'Search Gurbani : Gurbani Website';
     const [loader, setLoader] = useState(false);

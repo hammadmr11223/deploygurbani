@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, } from "react-router-dom";
+// import { useParams, useNavigate, } from "react-router-dom";
 import Spinner from '../../../components/Spinner';
 // import '../../../assets/css/dashboard.css';
 // import '../../../assets/css/intro.css';
@@ -11,9 +11,10 @@ import { API } from '../../../config/api';
 import Axios from 'axios';
 import { Helmet } from 'react-helmet';
 import HelmetWrapper from '../../../components/CommonHelmet';
+import { useParams } from 'next/navigation';
 
 function CompilationSGGS() {
-    const navigate = useNavigate();
+   // const navigate = useNavigate();
     const { pageno } = useParams();
     console.log('TEST', pageno)
     const [introData, setIntroData] = useState([]);
