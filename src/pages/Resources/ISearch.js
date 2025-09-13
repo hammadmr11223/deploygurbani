@@ -1,7 +1,7 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation } from "react-router-dom";
+// import { useNavigate, useOutletContext } from "react-router";
+// import { Link, useLocation } from "react-router-dom";
 //import imgs from './assets/img/content/ggs_01.jpg'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -26,8 +26,8 @@ import Image from 'next/image';
 
 const AngByAng = (props) => {
  //   const location = useLocation();
-    const data = location.state;
-    const navigate = useNavigate();
+  /*   const data = location.state;
+    const navigate = useNavigate(); */
     const shareUrl = 'https://searchgurbani.com';
     const title = 'Search Gurbani : Gurbani Website';
     const [loader, setLoader] = useState(false);
