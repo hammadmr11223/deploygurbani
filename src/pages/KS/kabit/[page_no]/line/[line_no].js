@@ -1,11 +1,12 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
 // import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation, useParams} from "react-router-dom";
+// import { Link, useLocation, useParams} from "react-router-dom";
 //import imgs from './assets/img/content/ggs_01.jpg'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import KabitByKabit from '../../../kabitByKabit';
+import { useParams } from 'next/navigation';
 
 
 function KabitPageLine() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation, useParams } from "react-router-dom";
+// import { useNavigate, useOutletContext } from "react-router";
+// import { Link, useLocation, useParams } from "react-router-dom";
 // import '../../../assets/css/dashboard.css';
 // import '../../../assets/css/style.css';
 // import '../../../assets/css/cyber.css';
@@ -11,10 +11,13 @@ import FontChange from '../../../components/FontChange';
 import initialFormState from '../../../components/defalutPref';
 import {Helmet} from "react-helmet";
 import HelmetWrapper from '../../../components/CommonHelmet';
+import { useParams } from 'next/navigation';
 
 
 function HukumAng() {
-    const { ang } = useParams();
+   // const { ang } = useParams();
+     const params = useParams();
+        const ang = params?.ang;
     const [loader, setLoader] = useState(false);
     const [languageCheck, setLanguageCheck] = useState(false);
     const [pageInfo, setPageInfo] = useState([]);

@@ -33,10 +33,14 @@ import { useParams } from 'next/navigation';
 function DgShabadLine() {
   //  const location = useLocation();
    // const navigate = useNavigate();
-    const { shabad_id, lineno } = useParams();
+
+     const params = useParams();
+       const shabad_id = params?.page_no;
+       const lineno = params?.line_no;
+   // const { shabad_id, lineno } = useParams();
     console.log('Shabad ID:', shabad_id);
     console.log('Shabad Line ID:', lineno);
-    const data = location.state;
+    //const data = location.state;
     const shareUrl = 'https://searchgurbani.com';
     const title = 'Search Gurbani : Gurbani Website';
     const [loader, setLoader] = useState(false);

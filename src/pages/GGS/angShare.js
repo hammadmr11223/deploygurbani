@@ -10,7 +10,10 @@ import { useParams } from 'next/navigation';
 
 
 function AngSharePage() {
-    const { page_no, line_no } = useParams();
+  //  const { page_no, line_no } = useParams();
+      const params = useParams();
+    const page_no = params?.page_no;
+    const line_no = params?.line_no;
     const [isNos, setIsNos] = useState(false);
     useEffect(()=>{
         console.log('NO', page_no);

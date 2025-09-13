@@ -1,13 +1,18 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, useLocation, useParams} from "react-router-dom";
+// import { Link, useLocation, useParams} from "react-router-dom";
 import { API } from '../../../config/api';
 import { ApiHelper } from '../../../helpers/ApiHelper';
 import Spinner from '../../../components/Spinner';
 import ResourcePrintView from '../../../components/ResourcePrint';
+import { useParams } from 'next/navigation';
 
 function SNPPrint() {
-    const { page_no, vol_no, lang} = useParams();
+  //  const { page_no, vol_no, lang} = useParams();
+     const params = useParams();
+    const page_no = params?.page_no;
+    const vol_no = params?.vol_no;
+  const lang = params?.lang;
     const [headingData, setHeadindData] = useState([]);
     const [angData, setAngData] = useState([]);
     const [loader, setLoader] = useState(false);
