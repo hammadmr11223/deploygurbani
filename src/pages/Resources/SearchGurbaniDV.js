@@ -1,7 +1,7 @@
 //Gurbani search//
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation } from "react-router-dom";
+// import { useNavigate, useOutletContext } from "react-router";
+// import { Link, useLocation } from "react-router-dom";
 // import '@/assets/css/dashboard.css';
 // import '@/assets/css/style.css';
 
@@ -17,6 +17,7 @@ import poster from '@/assets/img/isg-poster-sm.jpg';
 import Modal from 'react-bootstrap/Modal';
 import { Helmet } from 'react-helmet';
 import HelmetWrapper from '@/components/CommonHelmet';
+import Link from 'next/link';
 
 function SearchGurbaniDV() {
 
@@ -80,23 +81,23 @@ function SearchGurbaniDV() {
                                 <tbody>
                                     <tr>
                                         <td><img src={windows} class="dw-logos me-2" alt="Responsive image" />Windows (60 MB)</td>
-                                        <td> <Link to="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_windows_2_5_x86_jre.exe" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
+                                        <td> <Link href="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_windows_2_5_x86_jre.exe" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
                                     </tr>
                                     <tr>
                                         <td><img src={windows} class="dw-logos me-2" alt="Responsive image" />Windows 64 bit (60 MB)</td>
-                                        <td> <Link to="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_windows_2_5_x64_jre.exe" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
+                                        <td> <Link href="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_windows_2_5_x64_jre.exe" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
                                     </tr>
                                     <tr>
                                         <td><img src={mac} class="dw-logos me-2" alt="Responsive image" />Mac OSX Installer  (44 MB)</td>
-                                        <td> <Link to="https://www.data.searchgurbani.com/downloads/sgdv25/Search_Gurbani.dmg" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
+                                        <td> <Link href="https://www.data.searchgurbani.com/downloads/sgdv25/Search_Gurbani.dmg" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
                                     </tr>
                                     <tr>
                                         <td><img src={ubuntu} class="dw-logos me-2" alt="Responsive image" />Linux Installer  (44 MB)</td>
-                                        <td> <Link to="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_unix_2_5.sh" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
+                                        <td> <Link href="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV_unix_2_5.sh" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
                                     </tr>
                                     <tr>
                                         <td><img src={pdf} class="dw-logos me-2" alt="Responsive image" />SGDV v 2.5 Guide</td>
-                                        <td> <Link to="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV2.5.pdf" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
+                                        <td> <Link href="https://www.data.searchgurbani.com/downloads/sgdv25/SGDV2.5.pdf" target="_blank" className='dwnld-btn'><i class="bi bi-download"></i>Download</Link> </td>
                                     </tr>                                    
                                 </tbody>
                             </table>
@@ -109,7 +110,7 @@ function SearchGurbaniDV() {
                             <ul>
                                 <li>SGDV is cross platform software, can be installed on Windows/ MAC OSx/ Linux</li>
                                 <li>Java Run Enviornment</li>
-                                <li>Recommended Version 6 Update 5 or higher: <Link to="http://java.com/en/download/manual.jsp" target="_blank"><b>Details and Downloads</b></Link></li>
+                                <li>Recommended Version 6 Update 5 or higher: <Link href="http://java.com/en/download/manual.jsp" target="_blank"><b>Details and Downloads</b></Link></li>
                                 <li>RAM : atleast 512 MB</li>
                                 <li>Disk Space: 400MB</li>
                             </ul>
