@@ -1,7 +1,7 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
 // import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation, useParams } from "react-router-dom";
+// import { Link, useLocation, useParams } from "react-router-dom";
 //import imgs from './assets/img/content/ggs_01.jpg'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -31,10 +31,18 @@ import HelmetWrapper from '@/components/CommonHelmet';
 import { usePage } from '@/components/PageContext';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { useParams } from 'next/navigation';
 
 const PauriByPauri = (props) => {
     // const location = useLocation();
-    const { vaar_no, pauri_no, line_no } = useParams();
+  //  const { vaar_no, pauri_no, line_no } = useParams();
+
+   const params = useParams();
+    const vaar_no = params?.vaar_no;
+    const pauri_no = params?.pauri_no;
+    const line_no = params?.line_no;
+
+
     const navigate = useRouter();
     const shareUrl = 'https://searchgurbani.com';
     //const title = 'Search Gurbani : Gurbani Website';

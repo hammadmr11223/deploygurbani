@@ -1,7 +1,7 @@
 //Gurbani search//
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useOutletContext } from "react-router";
-import { Link, useLocation, useParams} from "react-router-dom";
+// import { useNavigate, useOutletContext } from "react-router";
+// import { Link, useLocation, useParams} from "react-router-dom";
 //import imgs from './assets/img/content/ggs_01.jpg'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -9,9 +9,12 @@ import PagePrintView from '@/components/pagePrint';
 import { API } from '@/config/api';
 import { ApiHelper } from '@/helpers/ApiHelper';
 import Spinner from '@/components/Spinner';
+import { useParams } from 'next/navigation';
 
 function KsPagePrint() {
-    const { page_no} = useParams();
+    // const { page_no} = useParams();
+     const params = useParams();
+        const page_no = params?.page_no;
     const [headingData, setHeadindData] = useState([]);
     const [angData, setAngData] = useState([]);
     const [loader, setLoader] = useState(false);
