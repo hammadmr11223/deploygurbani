@@ -23,6 +23,7 @@ import whatsapp from '@/assets/img/whatsapp.svg';
 import mail from '@/assets/img/mail.svg';
 import FontChange from '@/components/FontChange';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AngByAng = (props) => {
  //   const location = useLocation();
