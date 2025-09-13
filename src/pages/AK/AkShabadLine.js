@@ -32,7 +32,7 @@ import HelmetWrapper from '@/components/CommonHelmet';
 import Image from 'next/image';
 
 function AkShabadLine() {
-    const location = useLocation();
+   // const location = useLocation();
     const navigate = useNavigate();
     const { shabad_id, lineno, shabad_name } = useParams();
     console.log('Shabad ID:', shabad_id);

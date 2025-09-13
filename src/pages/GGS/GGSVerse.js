@@ -31,7 +31,7 @@ import HelmetWrapper from '@/components/CommonHelmet';
 import Image from 'next/image';
 
 const GGSVerse = (props) => {
-    const location = useLocation();
+   // const location = useLocation();
     const { page_no } = useParams();
     console.log('ID:', page_no);
     const data = location.state;

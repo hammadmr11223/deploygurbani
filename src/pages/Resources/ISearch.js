@@ -25,7 +25,7 @@ import FontChange from '@/components/FontChange';
 import Image from 'next/image';
 
 const AngByAng = (props) => {
-    const location = useLocation();
+ //   const location = useLocation();
     const data = location.state;
     const navigate = useNavigate();
     const shareUrl = 'https://searchgurbani.com';

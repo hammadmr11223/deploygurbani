@@ -30,7 +30,7 @@ import {Helmet} from "react-helmet";
 import HelmetWrapper from '@/components/CommonHelmet';
 
 function DgShabadLine() {
-    const location = useLocation();
+  //  const location = useLocation();
     const navigate = useNavigate();
     const { shabad_id, lineno } = useParams();
     console.log('Shabad ID:', shabad_id);
