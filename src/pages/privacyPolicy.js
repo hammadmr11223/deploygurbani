@@ -29,13 +29,13 @@ function PrivacyPolicy() {
 
     return (
         <div>
-            <HelmetWrapper
+          {/*   <HelmetWrapper
                 title={`Privacy Policy-: searchgurbani.com`}
                 description={`A comprehensive web site on research and  exploration of Sri Guru Granth Sahib, Amrit Keertan Gutka, Bhai Gurdas Vaaran, Kabit Bhai Gurdaas ,Sri Dasam Granth Sahib, exegesis , Gurbani, Gurbanee vichaar`}
                 keywords=""
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             <section className='section-1 intro-bg'>
                 <div className="container">
                     <div className="second-container intro-bkg">

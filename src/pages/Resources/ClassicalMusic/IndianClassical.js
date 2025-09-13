@@ -72,13 +72,13 @@ function IndianClassical() {
     return (
         <div>
             {loader && <Spinner />}
-            <HelmetWrapper
+           {/*  <HelmetWrapper
                 title={`Indian Classical Music and Sikh Kirtan -: Page ${headingData.page_no}`}
                 description={`A comprehensive web site on research and  exploration of Sri Guru Granth Sahib, Amrit Keertan Gutka, Bhai Gurdas Vaaran, Kabit Bhai Gurdaas ,Sri Dasam Granth Sahib, exegesis , Gurbani, Gurbanee vichaar`}
                 keywords=""
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             <section className='inner-actions p-4' >
                 <div className='container'>
                     <div className='row'>

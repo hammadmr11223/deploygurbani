@@ -97,13 +97,13 @@ function HukumAng() {
     }
     return (
         <div>
-            <HelmetWrapper
+          {/*   <HelmetWrapper
                 title={`Hukumnama - Ang ${pageInfo.pageno} -: searchgurbani.com`}
                 description={`A comprehensive web site on research and  exploration of Sri Guru Granth Sahib, Amrit Keertan Gutka, Bhai Gurdas Vaaran, Kabit Bhai Gurdaas ,Sri Dasam Granth Sahib, exegesis , Gurbani, Gurbanee vichaar`}
                 keywords="Hukum, Hukumnama, Darbar sahib, Harmandir sahib, Amritsar"
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             {/* <section>
                 <div className='container py-5'>
                     <div className='row'>

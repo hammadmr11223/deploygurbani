@@ -43,13 +43,13 @@ function AuthorRaga() {
     };
     return (
         <div>
-            <HelmetWrapper
+         {/*    <HelmetWrapper
                 title={`Sri Guru Granth Sahib Ji Raags Index - Author: ${formatAuthorName(slug)}`}
                 description={`Sri Guru Granth Sahib Raags Index - Author: ${formatAuthorName(slug)} - searchgurbani.com`}
                 keywords="guru granth sahib, granth, shabad, kirtan, sikh scripture, sikhism , raags, asa, suhi, gauri, ramkali, nanak, arjan, amar das, angad, ram das"
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             {loader && <Spinner />}
             <section className='inner-actions p-4' >
                 <div className='container'>

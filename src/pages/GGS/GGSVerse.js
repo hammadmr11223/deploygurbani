@@ -897,13 +897,13 @@ const GGSVerse = (props) => {
                                         return (
                                             <div className={`ang-itm ${isCenter && 'center-align'} ${isDarkMode && 'dark-mode'}`} >
                                                 {/* {parseInt(data.line) === parseInt(item.pagelineID)  &&   */}                                              
-                                                <HelmetWrapper
+                                              {/*   <HelmetWrapper
                                                 title={`Sri Guru Granth Sahib Verse ${item.english}`}
                                                 description={`This Verse ${item.punjabi} ${item.english} ${item.hindi}`}
                                                 keywords="Gurbani Kirtan, Amrit Keertan, Gurbani, Shabad Keertan,  Dasam Granth, Guru granth, granth, kabit, Bhai Gurdas, Vaaran, Varan"
                                                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                                                 url={window.location.href}
-                                            />{/* } */}
+                                            /> */}{/* } */}
                                                 {/* <h2 className='lang-1'  >{item.punjabi}</h2> */}
                                                 {isLareevar && isLareevarAssist === false ? <div style={{ fontFamily: gurmukhiFont, fontSize: `${gurmukhiSize}px`, color: gurmukhiColor }} >{item.punjabi.replace(/\s+/g, '')}</div> :
                                                     isLareevar && isLareevarAssist ?
