@@ -49,12 +49,20 @@ function AuthorRaga() {
                 console.log(err, 'err');
             });
     }
-    const formatAuthorName = (slugName) => {
+   /*  const formatAuthorName = (slugName) => {
         return slugName
         .split('-') // Split the slug into an array of words
         .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize the first letter of each word
         .join(' '); // Join the words back together with spaces
-    };
+    }; */
+    const formatAuthorName = (slugName) => {
+  if (!slugName || typeof slugName !== 'string') return '';
+  return slugName
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
     return (
         <div>
             <HelmetWrapper
