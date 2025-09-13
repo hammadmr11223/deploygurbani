@@ -37,13 +37,13 @@ function Unicode() {
 
     return (
         <div>
-            <HelmetWrapper
+          {/*   <HelmetWrapper
                 title={`Search Gurbani Unicode Fonts`}
                 description="Learn about Unicode Fonts"
                 keywords=""
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             <section className='section-1'>
                 {/* <div className=" justify-content-md-center align-items-center">
                     <div className='banner-img'>

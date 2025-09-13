@@ -37,13 +37,13 @@ function ChapterName() {
     }
     return (
         <div>
-            <HelmetWrapper
+           {/*  <HelmetWrapper
                 title={`Amrit Kirtan Gutka Shabad index -: searchgurbani.com`}
                 description={`Explore Amrit Keertan Gutka Shabads Chapter Index (ਅਮ੍ਰਿਤ ਕੀਰਤਨ ਗੁਟਕਾ) at  searchgurbani.com`}
                 keywords="Gurbani Kirtan,amrit Keertan, Gurbani, Shabad Keertan,  Dasam Granth, Guru Granth, Granth, Kabit, Bhai Gurdas, Vaaran, Varan"
                 image="https://www.searchgurbani.com/assets/img/sg-ggs1.png"
                 url={window.location.href}
-            />
+            /> */}
             {loader && <Spinner />}
             <section className='inner-actions p-4' >
                 <div className='container'>
